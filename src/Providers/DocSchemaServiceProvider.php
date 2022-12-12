@@ -8,7 +8,7 @@ use Alex\LaravelDocSchema\Middleware\canInstall;
 use Alex\LaravelDocSchema\Middleware\canUpdate;
 use Alex\LaravelDocSchema\Middleware\PdocsMiddleware;
 
-class LaravelDocSchemaServiceProvider extends ServiceProvider
+class DocSchemaServiceProvider extends ServiceProvider
 {
     /**
      * Indicates if loading of the provider is deferred.
