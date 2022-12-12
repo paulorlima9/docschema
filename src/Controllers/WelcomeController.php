@@ -1,6 +1,6 @@
 <?php
 
-namespace Alex\LaravelDocSchema\Controllers;
+namespace DocSchema\Controllers;
 
 use Illuminate\Routing\Controller;
 

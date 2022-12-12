@@ -1,6 +1,6 @@
 <?php
 
-namespace Alex\LaravelDocSchema\Middleware;
+namespace DocSchema\Middleware;
 
 use Closure;
 use Redirect;

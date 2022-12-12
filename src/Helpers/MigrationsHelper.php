@@ -1,6 +1,6 @@
 <?php
 
-namespace Alex\LaravelDocSchema\Helpers;
+namespace DocSchema\Helpers;
 
 use Illuminate\Support\Facades\DB;
 

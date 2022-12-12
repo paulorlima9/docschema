@@ -12,17 +12,17 @@
         "php": ">=7.4"
     },
     "autoload": {
-        "psr-4": {
-            "DocSchema\\": "src/"
-        },
         "files": [
             "src/Helpers/Functions.php"
-        ]
+        ],
+        "psr-4": {
+            "DocSchema\\": "src/"
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "DocSchema\\Providers\\LaravelDocSchemaServiceProvider"
+                "DocSchema\\Providers\\DocSchemaServiceProvider"
             ]
         }
     },

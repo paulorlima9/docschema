@@ -1,21 +1,21 @@
 <?php
 
-namespace Alex\LaravelDocSchema\Controllers;
+namespace DocSchema\Controllers;
 
 use Illuminate\Routing\Controller;
-use Alex\LaravelDocSchema\Events\LaravelInstallerFinished;
-use Alex\LaravelDocSchema\Helpers\EnvironmentManager;
-use Alex\LaravelDocSchema\Helpers\FinalInstallManager;
-use Alex\LaravelDocSchema\Helpers\InstalledFileManager;
+use DocSchema\Events\LaravelInstallerFinished;
+use DocSchema\Helpers\EnvironmentManager;
+use DocSchema\Helpers\FinalInstallManager;
+use DocSchema\Helpers\InstalledFileManager;
 
 class FinalController extends Controller
 {
     /**
      * Update installed file and display finished view.
      *
-     * @param \Alex\LaravelDocSchema\Helpers\InstalledFileManager $fileManager
-     * @param \Alex\LaravelDocSchema\Helpers\FinalInstallManager $finalInstall
-     * @param \Alex\LaravelDocSchema\Helpers\EnvironmentManager $environment
+     * @param \DocSchema\Helpers\InstalledFileManager $fileManager
+     * @param \DocSchema\Helpers\FinalInstallManager $finalInstall
+     * @param \DocSchema\Helpers\EnvironmentManager $environment
      * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
      */
     public function finish(InstalledFileManager $fileManager, FinalInstallManager $finalInstall, EnvironmentManager $environment)

@@ -1,12 +1,12 @@
 <?php
 
-namespace Alex\LaravelDocSchema\Middleware;
+namespace DocSchema\Middleware;
 
 use Closure;
 
 class canUpdate
 {
-    use \Alex\LaravelDocSchema\Helpers\MigrationsHelper;
+    use \DocSchema\Helpers\MigrationsHelper;
 
     /**
      * Handle an incoming request.

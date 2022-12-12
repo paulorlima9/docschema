@@ -1,15 +1,15 @@
 <?php
 
-namespace Alex\LaravelDocSchema\Controllers;
+namespace DocSchema\Controllers;
 
 use Exception;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
 use Illuminate\Routing\Redirector;
 use Illuminate\Support\Facades\DB;
-use Alex\LaravelDocSchema\Events\EnvironmentSaved;
-use Alex\LaravelDocSchema\Helpers\EnvironmentManager;
-use Alex\LaravelDocSchema\Events\LaravelInstallerFinished;
+use DocSchema\Events\EnvironmentSaved;
+use DocSchema\Helpers\EnvironmentManager;
+use DocSchema\Events\LaravelInstallerFinished;
 use Validator;
 
 class EnvironmentController extends Controller

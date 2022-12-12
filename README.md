@@ -1,2 +1,2 @@
-# laravel-docschema
+# docschema
 Laravel simple web doc schema

@@ -1,9 +1,9 @@
 <?php
 
-namespace Alex\LaravelDocSchema\Controllers;
+namespace DocSchema\Controllers;
 
 use Illuminate\Routing\Controller;
-use Alex\LaravelDocSchema\Helpers\RequirementsChecker; 
+use DocSchema\Helpers\RequirementsChecker; 
 
 class RequirementsController extends Controller
 {

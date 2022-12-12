@@ -1,9 +1,9 @@
 <?php
 
-namespace Alex\LaravelDocSchema\Controllers;
+namespace DocSchema\Controllers;
 
 use Illuminate\Routing\Controller;
-use Alex\LaravelDocSchema\Helpers\PermissionsChecker;
+use DocSchema\Helpers\PermissionsChecker;
 
 class PermissionsController extends Controller
 {

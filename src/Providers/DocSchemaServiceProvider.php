@@ -1,12 +1,12 @@
 <?php
 
-namespace Alex\LaravelDocSchema\Providers;
+namespace DocSchema\Providers;
 
 use Illuminate\Routing\Router;
 use Illuminate\Support\ServiceProvider;
-use Alex\LaravelDocSchema\Middleware\canInstall;
-use Alex\LaravelDocSchema\Middleware\canUpdate;
-use Alex\LaravelDocSchema\Middleware\PdocsMiddleware;
+use DocSchema\Middleware\canInstall;
+use DocSchema\Middleware\canUpdate;
+use DocSchema\Middleware\PdocsMiddleware;
 
 class DocSchemaServiceProvider extends ServiceProvider
 {

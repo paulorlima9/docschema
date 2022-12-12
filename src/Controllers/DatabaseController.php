@@ -1,11 +1,9 @@
 <?php
 
-namespace Alex\LaravelDocSchema\Controllers;
+namespace DocSchema\Controllers;
 
 use Illuminate\Routing\Controller;
-use Illuminate\Http\Request;
-use Alex\LaravelDocSchema\Helpers\DatabaseManager;
-use Illuminate\Support\Facades\DB;
+use DocSchema\Helpers\DatabaseManager;
 
 class DatabaseController extends Controller
 {
