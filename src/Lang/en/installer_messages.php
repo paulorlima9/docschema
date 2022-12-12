@@ -99,6 +99,7 @@ return [
                 'app_log_level_label_emergency' => 'emergency',
                 'app_url_label' => 'App Url',
                 'app_url_placeholder' => 'App Url',
+                'env_key_error' => 'You have given the wrong envato purchase key.',
                 'db_connection_failed' => 'Could not connect to the database.',
                 'db_connection_error_importing' => 'Something went wrong! Check your database connection or make sure that this database is empty',
                 'db_error_importing' => 'Something went wrong! Make sure that this database is empty',
@@ -119,6 +120,8 @@ return [
                 'db_password_placeholder' => 'Database Password',
 
                 'app_tabs' => [
+                    'purchase_code' => 'Envato Purchase Code',
+                    'envato_key_here' => 'Provide your Envato purchasing code',
                     'email_for_news' => 'Email Address',
                     'email_for_news_placeholder' => 'Enter your email for having lastest update',
                     'more_info' => 'More Info',
@@ -197,7 +200,7 @@ return [
     'final' => [
         'title' => 'Installation Finished',
         'templateTitle' => 'Installation Finished',
-        'finished' => 'Application has been successfully installed.',
+        'finished' => 'NULLED FOR BABIATO BY SESSIZBYU - Application has been successfully installed.',
         'migration' => 'Migration &amp; Seed Console Output:',
         'console' => 'Application Console Output:',
         'log' => 'Installation Log Entry:',

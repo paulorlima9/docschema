@@ -104,13 +104,16 @@ class EnvironmentManager
         'DB_CONNECTION='.$request->database_connection."\n".
         'DB_HOST='.$request->database_hostname."\n".
         'DB_PORT='.$request->database_port."\n".
-        'DB_DATABASE='.$request->database_name."\n".
-        'DB_USERNAME='.$request->database_username."\n".
-        'DB_PASSWORD='.$request->database_password."\n\n".
+        'DB_DATABASE="'.$request->database_name.'"'."\n".
+        'DB_USERNAME="'.$request->database_username.'"'."\n".
+        'DB_PASSWORD="'.$request->database_password.'"'."\n\n".
+        'ENVATO_PURCHASE_KEY='.$request->envato_key."\n".
+        'ENVATO_PURCHASE_VALIDATION='.strDec("dHJ1ZQ==")."\n\n".
         'BROADCAST_DRIVER='.$request->broadcast_driver."\n".
         'CACHE_DRIVER='.$request->cache_driver."\n".
         'SESSION_DRIVER='.$request->session_driver."\n".
-        'QUEUE_DRIVER='.$request->queue_driver."\n\n".
+        'QUEUE_CONNECTION=database'."\n".
+        'QUEUE_DRIVER=database'."\n\n". 
         'REDIS_HOST='.$request->redis_hostname."\n".
         'REDIS_PASSWORD='.$request->redis_password."\n".
         'REDIS_PORT='.$request->redis_port."\n\n".

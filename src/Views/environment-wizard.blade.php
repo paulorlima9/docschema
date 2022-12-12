@@ -11,7 +11,15 @@
 
 @section('container')
     <div class="tabs tabs-full">
-        <input id="tab2" type="radio" name="tabs" class="tab-input" checked />
+
+        <input id="tab1" type="radio" name="tabs" class="tab-input" checked />
+        <label for="tab1" class="tab-label">
+            <i class="fa fa-check-circle fa-2x fa-fw" aria-hidden="true"></i>
+            <br />
+            {{ trans('installer_messages.environment.wizard.tabs.verify') }}
+        </label>
+
+        <input id="tab2" type="radio" name="tabs" class="tab-input" />
         <label for="tab2" class="tab-label">
             <i class="fa fa-cog fa-2x fa-fw" aria-hidden="true"></i>
             <br />
@@ -28,6 +36,31 @@
 
 
         <form method="post" action="{{ route('LaravelInstaller::environmentSaveWizard') }}" class="tabs-wrap">
+            <div class="tab" id="tab1content">
+                <input type="hidden" name="_token" value="{{ csrf_token() }}">
+                
+                
+
+                <div class="form-group {{ $errors->has('email_id') ? ' has-error ' : '' }}">
+                    <label for="email_id">
+                        {{ trans('installer_messages.environment.wizard.form.app_tabs.email_for_news') }}
+                    </label>
+                    <input type="text" name="email_id" id="email_id" value="{{old('email_id')}}" placeholder="{{ trans('installer_messages.environment.wizard.form.app_tabs.email_for_news_placeholder') }}" />
+                    @if ($errors->has('email_id'))
+                        <span class="error-block">
+                            <i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i>
+                            {{ $errors->first('email_id') }}
+                        </span>
+                    @endif
+                </div>
+                <!-- SUBMIT_NEXT_TAB -->
+                <div class="buttons">
+                    <button class="button" onclick="showEnvironmentSettings();return false">
+                        {{ trans('installer_messages.environment.wizard.form.buttons.setup_env') }}
+                        <i class="fa fa-angle-right fa-fw" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
             <div class="tab" id="tab2content">
                 
                 <!-- APP_NAME -->
