@@ -11,7 +11,7 @@
 
 @section('container')
     <div class="tabs tabs-full">
-        <input id="tab2" type="radio" name="tabs" class="tab-input" />
+        <input id="tab2" type="radio" name="tabs" class="tab-input" checked />
         <label for="tab2" class="tab-label">
             <i class="fa fa-cog fa-2x fa-fw" aria-hidden="true"></i>
             <br />
