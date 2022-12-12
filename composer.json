@@ -1,16 +1,11 @@
 {
-    "name": "pdocs/laravel-docschema",
+    "name": "paulorlima9/docschema",
     "description": "Laravel simple web doc schema",
     "license": "MIT",
     "authors": [
         {
-            "name": "Alex Lim",
-            "email": "amarlim@gmail.com"
-        } 
-    ],
-    "credit": [
-        {
-            "name": "RachidLaasri"
+            "name": "o_0",
+            "email": "null@max.com"
         } 
     ],
     "require": {
@@ -18,16 +13,16 @@
     },
     "autoload": {
         "psr-4": {
-            "Alex\\LaravelDocSchema\\": "src/"
+            "DocSchema\\": "src/"
         },
         "files": [
-            "src/Helpers/functions.php"
+            "src/Helpers/Functions.php"
         ]
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Alex\\LaravelDocSchema\\Providers\\LaravelDocSchemaServiceProvider"
+                "DocSchema\\Providers\\LaravelDocSchemaServiceProvider"
             ]
         }
     },
